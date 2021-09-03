@@ -94,6 +94,13 @@ p { line-height: 1.9; }
     color: white;    
     padding-bottom: 30px;    
 }
+.gallery .img-fluid {
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+.gallery .img-fluid:hover {
+    transform: scale(0.9);
+}
 .tm-row .icon.img-fluid {
     width: 80px;
     height: 80px;
@@ -427,6 +434,14 @@ textarea {
 @media (min-width: 992px) {
     .tm-col-right {
         animation: col .5s .5s alternate both;
+    }
+}
+@media (min-width: 1200px) {
+    .gallery .img-fluid {
+        min-width: 250px;
+        min-height: 220px;
+        object-fit: cover;
+        object-position: center;
     }
 }
 @keyframes show {
