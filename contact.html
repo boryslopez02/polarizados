@@ -60,16 +60,16 @@
                 <main class="tm-col-right tm-contact-main"> <!-- Content -->
                     <section class="tm-content tm-contact">
                         <h2 class="mb-4 tm-content-title">Contáctanos</h2>
-                        <p class="mb-85">Etiam et egestas arcu. Fusce congue quis elit vitae commodo. Cras neque mauris, vehicula in ipsum sit amet, faucibus aliquam arcu.</p>
-                        <form id="contact-form" action="" method="POST">
+                        <p class="mb-85" id="ui-text">Dejanos un mensaje, nos pondremos en contacto a la brevedad !</p>
+                        <form id="contact-form" name="contacto-polarizados" method="POST" netlify>
                             <div class="form-group mb-4">
-                                <input type="text" name="name" class="form-control" placeholder="Nombre" required="" />
+                                <input type="text" name="name" id="namef" class="form-control" minlength="3" placeholder="Nombre" required/>
                             </div>
                             <div class="form-group mb-4">
-                                <input type="email" name="email" class="form-control" placeholder="Email" required="" />
+                                <input type="email" name="email" id="emailf" class="form-control" placeholder="Email" required/>
                             </div>
                             <div class="form-group mb-5">
-                                <textarea rows="6" name="message" class="form-control" placeholder="Mensaje..." required=""></textarea>
+                                <textarea rows="6" name="message" id="mensajef" class="form-control" placeholder="Mensaje..." required></textarea>
                             </div>
                             <div class="text-right">
                                 <button type="submit" class="btn btn-big btn-primary">Enviar</button>
@@ -105,6 +105,7 @@
 
     <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
     <script src="js/api.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.backstretch.min.js"></script>
