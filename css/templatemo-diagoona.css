@@ -289,6 +289,9 @@ hr { border-top: 1px solid white; }
     background: rgba(0, 0, 0, 0.233);
     color: white;
 }
+#ui-text2, #ui-text3, #ui-text4 {
+    display: none;
+}
 .tm-site-footer {
     padding: 40px 0 20px;
     max-width: 660px;
@@ -341,7 +344,13 @@ textarea {
     margin-left: auto;
     margin-right: auto;
 }
-
+.services.tm-row .media {
+    border-radius: 4px;
+    transition: .3s ease all;
+}
+.services.tm-row .media:hover {
+    background-color: #ffffff1e;
+}
 .form-control::-webkit-input-placeholder { color: white; } /* Edge */  
 .form-control:-ms-input-placeholder { color: white; } /* Internet Explorer 10-11 */  
 .form-control::placeholder { color: white; }
