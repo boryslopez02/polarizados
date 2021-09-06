@@ -148,6 +148,7 @@ p { line-height: 1.9; }
     backdrop-filter: blur(2px);
 }
 .modal .modal-content .modal-body .img-fluid {
+    max-height: 350px;
     border-radius: 5px;
 }
 .modal .modal-content .modal-body p {
@@ -347,6 +348,9 @@ textarea {
 .services.tm-row .media {
     border-radius: 4px;
     transition: .3s ease all;
+}
+.services.tm-row .media img {
+    border-radius: 4px;
 }
 .services.tm-row .media:hover {
     background-color: #ffffff1e;
